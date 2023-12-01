@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CyberTec</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="icon" type="image/x-icon" href="images/iso_blanco.svg">
+</head>
+
+<body>
+    <!-- INICIO HEADER -->
+    <header class="header theme-sky-dark in-line" id="header">
+        <div class="in-line">
+            <img class="branding-logo"
+                 src="images/iso_blanco.svg"
+                 alt="logotipo de CyberTec"
+                 aria-hidden="true" />
+            <p class="branding" aria-label="Bienvenido a nuestra tienda on-line:">CyberTec</p>
+        </div>
+      
+
+          <!-- inicia boton cart-->
+               
+            
+                   
+          <div>
+           
+
+            <button type="button"
+                    class=" btn-cart in-line button button-simple-empty"
+                    aria-label="Iniciar Sesion">
+                    <i class="fas fa-shopping-login login-icon"
+                    aria-hidden="true"
+                   aria-live="Iniciar Sesión"></i>
+                <div class= "cart-text">
+                    <p> Iniciar Sesión (<span class="cart-qty"></span>Login)</p>
+                </div>
+                                
+            </button>
+        </div>
+           
+            <button type="button"
+                    class=" btn-cart in-line button button-simple-empty"
+                    aria-label="Mostrar productos agregados al carrito">
+                <i class="fas fa-shopping-cart cart-icon"
+                   aria-hidden="true"
+                   aria-live="polite"></i>
+                <div class= "cart-text">
+                    <p>Carrito (<span class="cart-qty">0</span>ítems)</p>
+                </div>
+                                
+            </button>
+        </div>
+        <!--finaliza boton cart-->
+        
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- INICIO BANNER -->
+    <section class="banner in-stack">
+        <div>
+            <img class="banner-img" 
+                 src="images/banner.jpg"
+                 alt="escritorio con productos de la categoria electrónica."
+                 aria-hidden="true" />
+        </div>
+        <div class="banner-title">
+            <h1>CyberTec Informática</h1>  
+        </div>
+       
+    </section>
+    <nav class="nav-principal">
+    
+        <a class="menu-header" href="index.html">Nuestros Productos</a>
+        <a class="menu-header" href="noticias.html">Noticias</a>
+        <a class="menu-header" href="cuestionario.html">Cuestionário</a>
+        <a class="menu-header" href="trabajaconnosotros.html">Trabaja con Nosotros</a>
+        <a class="menu-header" href="contacto.html">Contacto</a>
+</nav>
+    <!-- FIN BANNER -->
+    <div class="container">
+        <header>
+          <h1 id="title">CYBERTEC</h1>
+          <h3 id="textoh3">C I B E R T E C ٠ I N F O R M Á T I C A</h3>
+          <h3 id="textoh3">Encuesta de satisfacción</h3>
+          <p id="description">
+            Estimado cliente:<br>
+            Nos complace haberlo recibido en CyberTec.
+            Su opinión es importante para nuestros objetivos de calidad
+            y experiencia de nuestros clientes. Agradecemos el tiempo destinado
+            para ayudarnos a brindar un servicio de excelencia.
+          </p>
+        </header>
+        <main>
+          <form id="survey-form">
+            <div class="form-group">
+              <label id="name-label" for="name">Nombre *</label>
+              <input
+                class="form-control"
+                id="name"
+                type="text"
+                placeholder="Ingrese su nombre. Por ejemplo: Ana María"
+                required
+              />
+            </div>
+  
+            <div class="form-group">
+              <label id="email-label" for="email">Correo electrónico *</label>
+              <input
+                class="form-control"
+                id="email"
+                type="email"
+                placeholder="Ingrese su correo electrónico. Por ejemplo: anamaria@correo.com"
+                required
+              />
+            </div>
+  
+            <div class="form-group">
+              <label id="number-label" for="number">Edad
+                <span class="clue">(opcional)</span>
+              </label>
+              <input
+                class="form-control"
+                id="number"
+                type="number"
+                min="10"
+                max="99"
+                placeholder="Ingrese su edad. Por ejemplo: 35"
+              />
+            </div>
+  
+            <div class="form-group">
+              <p>¿Cómo conoció nuestra tienda?</p>
+              <select class="form-control" name="" id="dropdown">
+                <option disabled selected value>Seleccione una opción</option>
+                <option value="redes-sociales">Redes sociales</option>
+                <option value="portales">Indicación de amigos</option>
+                <option value="recomendacion">Publicidad</option>
+                <option value="google">Google</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+  
+            <div class="form-group">
+              <p>Valoración de nuestros servicios</p>
+              <div class="row">
+                  <div class="servicio"></div>
+                  <div class="mejorable">
+                    <label class="form-label">Mejorable</label>
+                  </div>
+                  <div class="satisfactorio">
+                    <label class="form-label">Satisfactorio</label>
+                  </div>
+                  <div class="excelente">
+                    <label class="form-label">Excelente</label>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="servicio">
+                  <label class="form-label">Atención</label>
+                </div>
+                <div class="mejorable">
+                  <input name="valor-atencion" type="radio" value="mejorable" class="form-input" />
+                </div>
+                <div class="satisfactorio">
+                  <input name="valor-atencion" type="radio" value="satisfactorio" class="form-input" />
+                </div>
+                <div class="excelente">
+                  <input name="valor-atencion" type="radio" value="excelente" class="form-input" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="servicio">
+                  <label class="form-label">Precios</label>
+                </div>
+                <div class="mejorable">
+                  <input name="valor-limpieza" type="radio" value="mejorable" class="form-input" />
+                </div>
+                <div class="satisfactorio">
+                  <input name="valor-limpieza" type="radio" value="satisfactorio" class="form-input" />
+                </div>
+                <div class="excelente">
+                  <input name="valor-limpieza" type="radio" value="excelente" class="form-input" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="servicio">
+                  <label class="form-label">Comodidad</label>
+                </div>
+                <div class="mejorable">
+                  <input name="valor-comodidad" type="radio" value="mejorable" class="form-input" />
+                </div>
+                <div class="satisfactorio">
+                  <input name="valor-comodidad" type="radio" value="satisfactorio" class="form-input" />
+                </div>
+                <div class="excelente">
+                  <input name="valor-comodidad" type="radio" value="excelente" class="form-input" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="servicio">
+                  <label class="form-label">Tienda</label>
+                </div>
+                <div class="mejorable">
+                  <input name="valor-servcuarto" type="radio" value="mejorable" class="form-input" />
+                </div>
+                <div class="satisfactorio">
+                  <input name="valor-servcuarto" type="radio" value="satisfactorio" class="form-input" />
+                </div>
+                <div class="excelente">
+                  <input name="valor-servcuarto" type="radio" value="excelente" class="form-input" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="servicio">
+                  <label class="form-label">Atendimiento</label>
+                </div>
+                <div class="mejorable">
+                  <input name="valor-precio" type="radio" value="mejorable" class="form-input" />
+                </div>
+                <div class="satisfactorio">
+                  <input name="valor-precio" type="radio" value="satisfactorio" class="form-input" />
+                </div>
+                <div class="excelente">
+                  <input name="valor-precio" type="radio" value="excelente" class="form-input" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="servicio">
+                  <label class="form-label">Seguridad</label>
+                </div>
+                <div class="mejorable">
+                  <input name="valor-seguridad" type="radio" value="mejorable" class="form-input" />
+                </div>
+                <div class="satisfactorio">
+                  <input name="valor-seguridad" type="radio" value="satisfactorio" class="form-input" />
+                </div>
+                <div class="excelente">
+                  <input name="valor-seguridad" type="radio" value="excelente" class="form-input" />
+                </div>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <p>Principal motivo para elegir CyberTec</p>
+              <label class="form-label">
+                <input type="checkbox" value="opiniones" class="form-input"/>
+                Opiniones de internet
+              </label>
+              <label class="form-label">
+                <input type="checkbox" value="recomendaciones" class="form-input" />
+                Recomendaciones
+              </label>
+              <label class="form-label">
+                <input type="checkbox" value="calidad" class="form-input" />
+                Calidad del servicio
+              </label>
+              <label class="form-label">
+                <input type="checkbox" value="precio" class="form-input" />
+                Precio
+              </label>
+              <label class="form-label">
+                <input type="checkbox" value="disponibilidad" class="form-input" />
+                Atención al cliente
+              </label>
+              <label class="form-label">
+                <input type="checkbox" value="ubicacion" class="form-input" />
+                Ubicación
+              </label>
+            </div>
+  
+            <div class="form-group">
+              <p>Agregar sugerencias y comentarios</p>
+              <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Escriba lo que desee aquí"></textarea>
+            </div>
+  
+            <div class="form-group buttonsub">
+              <button id="submit" type="submit">Enviar</button>
+            </div>
+          </form>
+        </main>
+      </div>
+
+    <!-- INICIO FOOTER -->
+    <footer class="footer-main in-line theme-sky-dark">
+        <div class="logo-container in-line">
+            <img src="images/iso_blanco.svg" 
+                 alt="logotipo de CyberTec"
+                 class="logo" />
+            <p>CyberTec - Gracias por visitarnos 💙</p>
+        </div>
+        <p>CyberTec © 2023 - Celina Souza</p>
+    </footer>
+
+    <footer class="footer-checkout in-line">
+        <button type="button" class="btn-cancel-buy button button-simple-solid">
+            Seguir comprando
+        </button>
+        <button type="button" class="btn-finish-buy button button-simple-solid-reverse">
+            Finalizar
+        </button>
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <div class="overlay is-hidden" id="overlay"></div>
+    <!-- FIN MODAL VACIAR CARRITO -->
+    <script src="index.js"></script>
+</body>
+
+</html>

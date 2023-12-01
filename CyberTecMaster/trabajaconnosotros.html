@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CyberTec</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="icon" type="image/x-icon" href="images/iso_blanco.svg">
+</head>
+
+<body>
+    <!-- INICIO HEADER -->
+    <header class="header theme-sky-dark in-line" id="header">
+        <div class="in-line">
+            <img class="branding-logo"
+                 src="images/iso_blanco.svg"
+                 alt="logotipo de CyberTec"
+                 aria-hidden="true" />
+            <p class="branding" aria-label="Bienvenido a nuestra tienda on-line:">CyberTec</p>
+        </div>
+     
+
+       <!-- inicia boton cart-->
+               
+            
+                   
+       <div>
+           
+
+        <button type="button"
+                class=" btn-cart in-line button button-simple-empty"
+                aria-label="Iniciar Sesion">
+                <i class="fas fa-shopping-login login-icon"
+                aria-hidden="true"
+               aria-live="Iniciar Sesión"></i>
+            <div class= "cart-text">
+                <p> Iniciar Sesión (<span class="cart-qty"></span>Login)</p>
+            </div>
+                            
+        </button>
+    </div>
+       
+        <button type="button"
+                class=" btn-cart in-line button button-simple-empty"
+                aria-label="Mostrar productos agregados al carrito">
+            <i class="fas fa-shopping-cart cart-icon"
+               aria-hidden="true"
+               aria-live="polite"></i>
+            <div class= "cart-text">
+                <p>Carrito (<span class="cart-qty">0</span>ítems)</p>
+            </div>
+                            
+        </button>
+    </div>
+    <!--finaliza boton cart-->
+    
+</header>
+    <!-- FIN HEADER -->
+
+    <!-- INICIO BANNER -->
+    <section class="banner in-stack">
+        <div>
+            <img class="banner-img" 
+                 src="images/banner.jpg"
+                 alt="escritorio con productos de la categoria electrónica."
+                 aria-hidden="true" />
+        </div>
+        <div class="banner-title">
+            <h1>CyberTec Informática</h1>  
+        </div>
+       
+    </section>
+    <nav class="nav-principal">
+    
+        <a class="menu-header" href="index.html">Nuestros Productos</a>
+        <a class="menu-header" href="noticias.html">Noticias</a>
+        <a class="menu-header" href="cuestionario.html">Cuestionário</a>
+        <a class="menu-header" href="trabajaconnosotros.html">Trabaja con Nosotros</a>
+        <a class="menu-header" href="contacto.html">Contacto</a>
+</nav>
+    <!-- FIN BANNER -->
+    <video autoplay muted loop playsinline>
+   
+      <source src="images/video02.mp4" type="video/mp4">
+     
+    </video>
+  </div>
+    <section class="job-opportunities">
+        <h1>Ofertas de trabajo</h1>
+        <div class="job-card">
+            <h3>Desarrollador Web</h3>
+            <p>Estamos buscando un desarrollador web con experiencia en HTML, CSS y JavaScript.</p>
+            <a href="aplicar.html">Aplicar</a>
+        </div>
+        <div class="job-card">
+            <h3>Diseñador Gráfico</h3>
+            <p>Buscamos un diseñador gráfico creativo y apasionado por el diseño visual.</p>
+            <a href="aplicar.html">Aplicar</a>
+        </div>
+        <!-- Puedes agregar más ofertas de trabajo aquí -->
+    </section>
+
+    <section class="application-form">
+        <h1>Envía tu solicitud</h1>
+        <form action="procesar_solicitud.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="cv">Adjunta tu CV (PDF o Word):</label>
+            <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" required>
+
+            <label for="mensaje">Mensaje (opcional):</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </section>
+
+    <!-- INICIO FOOTER -->
+    <footer class="footer-main in-line theme-sky-dark">
+        <div class="logo-container in-line">
+            <img src="images/iso_blanco.svg" 
+                 alt="logotipo de CyberTec"
+                 class="logo" />
+            <p>CyberTec - Gracias por visitarnos 💙</p>
+        </div>
+        <p>CyberTec © 2023 - Celina Souza</p>
+    </footer>
+
+    <footer class="footer-checkout in-line">
+        <button type="button" class="btn-cancel-buy button button-simple-solid">
+            Seguir comprando
+        </button>
+        <button type="button" class="btn-finish-buy button button-simple-solid-reverse">
+            Finalizar
+        </button>
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <div class="overlay is-hidden" id="overlay"></div>
+    <!-- FIN MODAL VACIAR CARRITO -->
+    <script src="index.js"></script>
+</body>
+
+</html>
